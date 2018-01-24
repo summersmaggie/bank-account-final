@@ -10,39 +10,37 @@
   <body>
     <div class="container">
       <h1>Welcome to Epicodus Credit Union</h1>
-      <div class="row">
-        <div class="col-md-6">
+
+        <form class="bank">
           <h4>Register Account</h4>
-          <form class="register">
-            <div class="form-group">
-              <label for="name">Enter Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="initialMoney">Initial Deposit</label>
-              <input type="text" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-info">Create</button>
-          </form>
-        </div>
-        <div class="col-md-6">
+          <div class="form-group">
+            <label for="name">Enter Name</label>
+            <input id="name" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="initialMoney">Initial Deposit</label>
+            <input id="initialDeposit" type="text" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info" id="acctBtn">Enter</button>
+        </form>
+
+        <form class="depoWith">
           <h4>Deposit or Withdrawal</h4>
-          <form class="depoWith">
-            <div class="form-group">
-              <label for="deposit">Deposit Amount</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="withdrawal">Withdrawal Amount</label>
-              <input type="text" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-info">Enter</button>
-          </form>
-        </div>
-      </div>
+          <div class="form-group">
+            <label for="deposit">Deposit Amount</label>
+            <input id="deposit" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="withdrawal">Withdrawal Amount</label>
+            <input id="withdrawal" type="text" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info" id="transactBtn">Enter</button>
+        </form>
+    </div>
+
       <div class="balance">
         <h4>Current Balance</h4>
-        <p>im a place holder $$$</p>
+        <span class="amount">im a place holder $$$</span>
       </div>
     </div>
   </body>
