@@ -39,8 +39,9 @@ $(document).ready(function() {
     var withdrawal = parseInt($("input#withdrawal").val());
     console.log(withdrawal);
 
-    newBankAccount.balance =  + deposit;
-    console.log(depositTotal);
+    newBankAccount.balance = newBankAccount.balance + deposit;
+    newBankAccount.balance = newBankAccount.balance - withdrawal;
+    console.log(newBankAccount.balance);
   });
 });
 
