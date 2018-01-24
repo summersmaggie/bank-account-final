@@ -1,3 +1,12 @@
-.balance {
+#depoWith {
   display: none;
+}
+
+#firstresult {
+  padding: 10px;
+  margin: 10px;
+}
+
+.amount {
+  font-style: oblique;
 }
